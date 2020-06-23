@@ -1,5 +1,7 @@
 # String Dotted to Nested Object
 
+This function allows you to parse objects whose attributes are strings with points, and converts them into nested objects.
+
 ## Input
 This function receives objects like:
 

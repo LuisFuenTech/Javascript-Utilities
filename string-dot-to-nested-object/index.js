@@ -17,7 +17,7 @@ function parseStringDotObject(object) {
     }
   }
 
-  return result; //@luisfuentech
+  return result;
 }
 
 module.exports = {

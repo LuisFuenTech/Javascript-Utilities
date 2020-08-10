@@ -11,6 +11,15 @@ and returns a JSON array:
 await csvToJson(csvFileName);
 ```
 
+## csvToArray function
+
+This function receives the name of the csv file
+and returns an array:
+
+```
+await csvToArray(csvFileName);
+```
+
 ## csvToJsonFile
 
 This function receives the name of the csv file
@@ -19,4 +28,3 @@ and the name of the output file. This write a JSON file with the name of the out
 ```
 csvToJsonFile(csvFileName, outputFileName);
 ```
-

@@ -22,6 +22,16 @@ const csvToJson = async (fileName) => {
 /**
  *
  * @param {string} fileName
+ * @returns JSON
+ */
+const csvToArray = async (fileName) => {
+  const result = await readCsvFile(fileName);
+  return result;
+};
+
+/**
+ *
+ * @param {string} fileName
  * @param {string} outputName
  * @returns void
  */
@@ -96,10 +106,12 @@ const handleError = (error, process) => {
 
 (async () => {
   console.log(await csvToJson('example'));
+  console.log(await csvToArray('example'));
   csvToJsonFile('example', 'exampleJson');
 })();
 
 module.exports = {
   csvToJson,
-  csvToJsonFile
+  csvToJsonFile,
+  csvToArray
 };

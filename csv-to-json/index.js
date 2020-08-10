@@ -98,3 +98,8 @@ const handleError = (error, process) => {
   console.log(await csvToJson('example'));
   csvToJsonFile('example', 'exampleJson');
 })();
+
+module.exports = {
+  csvToJson,
+  csvToJsonFile
+};

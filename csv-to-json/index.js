@@ -22,7 +22,7 @@ const csvToJson = async (fileName) => {
 /**
  *
  * @param {string} fileName
- * @returns JSON
+ * @returns array
  */
 const csvToArray = async (fileName) => {
   const result = await readCsvFile(fileName);

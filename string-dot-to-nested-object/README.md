@@ -3,7 +3,7 @@
 This function allows you to parse objects whose attributes are strings with points, and converts them into nested objects.
 
 ## Input
-This function can receives a single object or an array of object like:
+This function can receives a **single object** or an **array of objects** like:
 
 ```
 {
@@ -39,6 +39,7 @@ or
 ## Output
 This function returns the object like:
 
+When an **object** is passed, returns an **object**:
 ```
 {
   person: {
@@ -59,4 +60,29 @@ This function returns the object like:
     github: 'luisfuentech'
   }
 }
+```
+
+When an **array** is passed, returns an **array**:
+```
+[
+  {
+    person: {
+      name: 'Luis',
+      age: 74,
+      address: {
+        city: 'Atlanta',
+        street: {
+          name: 'St. Joseph',
+          number: '#34-46'
+        }
+      },
+      position: 'Software Engineer'
+    },
+    social: {
+      instagram: '@luisfuentech',
+      twitter: 'luisfuentech'
+      github: 'luisfuentech'
+    }
+  }
+]
 ```

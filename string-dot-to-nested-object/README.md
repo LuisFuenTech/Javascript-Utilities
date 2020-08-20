@@ -56,7 +56,7 @@ When an **object** is passed, returns an **object**:
   },
   social: {
     instagram: '@luisfuentech',
-    twitter: 'luisfuentech'
+    twitter: 'luisfuentech',
     github: 'luisfuentech'
   }
 }
@@ -80,7 +80,7 @@ When an **array** is passed, returns an **array**:
     },
     social: {
       instagram: '@luisfuentech',
-      twitter: 'luisfuentech'
+      twitter: 'luisfuentech',
       github: 'luisfuentech'
     }
   }

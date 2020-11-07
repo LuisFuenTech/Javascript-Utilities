@@ -2,9 +2,11 @@ function parseStringDotObject(data) {
   const mainProcess = (object) => {
     const keys = Object.keys(object);
     let result = {};
+
     for (let i = 0; i < Object.keys(object).length; i++) {
-      parseObject(result, keys[i].split('.'), object[keys[i]]);
+      parseObject(result, keys[i].split("."), object[keys[i]]);
     }
+
     function parseObject(parentObject, keysArray, value) {
       if (keysArray.length == 1) {
         parentObject[keysArray[0]] = value;
@@ -27,5 +29,5 @@ function parseStringDotObject(data) {
 }
 
 module.exports = {
-  parseStringDotObject
+  parseStringDotObject,
 };

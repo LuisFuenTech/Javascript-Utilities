@@ -21,3 +21,6 @@ timer.finish();
 ```
 Time to be completed: xx:xx:xx ⏱
 ```
+
+## Run
+If you using _nodejs_ you can run de module _example.js_ with `node example.js` command
